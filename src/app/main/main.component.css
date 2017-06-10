@@ -1,0 +1,38 @@
+.logo{
+    margin-top:0.1em; 
+       /*logo*/
+    background: url(../login/logo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 25%;
+    height: 1em;
+}
+
+/*rgba(255, 102, 0, 1);*/
+/*.shader{
+    background-color: rgba(255, 102, 0, 0.9);
+    height:100%
+}
+
+.card-image{*/
+       /*side pic*/
+     /*background-image: url(head.png) !important;*/
+     /*background-position-x: 40%;
+     background-size: cover;
+}*/
+
+pri-color{
+background-color:rgba(255, 103, 0, 1);
+}
+pri-color{
+background-color:rgba(255, 103, 0, 1);
+}
+.acc-color{
+background-color:rgba(16, 75, 169, 1);
+}
+.dpri-color{
+background-color:rgba(0, 162, 135, 1);
+}
+.dacc-color{
+background-color:rgba(255, 162, 0, 1);
+}

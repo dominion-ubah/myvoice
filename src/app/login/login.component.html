@@ -1,0 +1,210 @@
+ <div class="row">
+     <div class="col s12 bglanding" style="padding: 0 !important;">
+         <div class="shader">
+            <div class="navbar-fixed"> 
+            <nav class="row ">
+            <div class="nav-wrapper " style="background-color: white !important; color: black  !important; ">
+            <div class="col s4 m2 l1 offset-l1 logo" style=" color: black  !important; width: 11.5%; height: 4em; "></div>
+            <ul id="nav-mobile" class="right hide-on-med-and-down col s4 m2 l5" >
+                <li><a href="sass.html" style=" color: black  !important; ">Terms & Conditions</a></li>
+                <li><a href="badges.html" style=" color: black  !important; ">FAQ</a></li>
+                <li><a href="collapsible.html" style=" color: black  !important; ">Support</a></li>
+                <li><a class=" btn waves-effect ">Sign Up</a></li>
+            </ul>
+            
+            </div>
+        </nav>
+      </div>
+<div class="row" style="margin-bottom: 2em"></div>
+<div class="col xl4 l3 offset-xl1">
+
+  <div class="row">
+        <div class="col s12 m6 l12" style="height:6em !important;">
+          <div class="card white darken-1">
+            <div class="card-content lightgreen-text">
+              <span class="card-title left">Burning Issues</span><span class="right" style="margin-top: 0.7em">be heard...</span>
+             <vg-player>
+    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls style="height:26em !important;">
+        <source src="http://static.videogular.com/assets/videos/videogular.mp4" type="video/mp4">
+    </video>
+</vg-player>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+ 
+</div>
+
+
+<div class="col s12 m8 l3  offset-m4 offset-l3" style="box-shadow: 0px 1px 2px 0 rgba(113, 113, 113, 0.2)">
+    <div class="card">
+      
+      <div class="card-stacked">
+        <div class="card-content">
+         
+
+
+<div class="col-md-6 col-md-offset-3">
+                        <!--<div class="alert alert-info">
+                            Username: test<br />
+                            Password: test
+                        </div>-->
+                        <div class="row">
+                            <div class="col l12">
+                              <div class="logo"></div>
+                              </div>
+                        </div>
+                        <h5>Login <i class="material-icons" style="background-color:rgba(0, 162, 135, 1); color: white;  border-radius:50%; ">arrow_forward</i></h5>
+                        <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+                            <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !userName.valid }">
+                                <label for="userName">Username</label>
+                                <input type="text" class="form-control" name="userName" [(ngModel)]="model.userName" #userName="ngModel" required />
+                                <div *ngIf="f.submitted && !userName.valid" class="help-block">Username is required</div>
+                            </div>
+                            <!--{{model.userName}}-->
+                            <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+                                <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+                            </div>
+                            <!--{{model.password}}j,h,il-->
+                            <div class="form-group ">
+                                <button [disabled]="loading" class="btn  pri-color btn-large col l12" >Login</button>
+                                <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                            </div>
+                            <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+                        </form>
+                        <div class="row " style="padding: 2em 0"></div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        </div>
+       
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+  
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+     </div>
+    </div>                  
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<form #f="ngForm" (ngSubmit)="onFSubmit(f)" novalidate >
+    <input type="text" name="userName" #userName="ngModel" ngModel />
+    <label for="userName">Username</label>
+    <input type="text" name="password" #password="ngModel" ngModel />
+    <label for="password">Password</label><br/>
+    <button class="btn waves-effect ">Submit</button>
+
+</form>
+{{userName.value}}<br/>
+
+{{password.value}}-->
+
+   <!--<form  #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+      <input name="first" ngModel required #first="ngModel">
+      <input name="last" ngModel>
+      <button>Submit</button>
+    </form>
+    <p>First name value: {{ first.value }}</p>
+    <p>First name valid: {{ first.valid }}</p>
+    <p>Form value: {{ f.value | json }}</p>
+    <p>Form valid: {{ f.valid }}</p>-->
