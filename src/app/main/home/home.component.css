@@ -1,7 +1,7 @@
-pri-color{
+.pri-color{
 background-color:rgba(255, 103, 0, 1);
 }
-pri-color{
+.pri-color{
 background-color:rgba(255, 103, 0, 1);
 }
 .acc-color{
@@ -62,6 +62,15 @@ background-color:rgba(255, 162, 0, 1);
 .topic-pic{
     background-color: rgba(90, 252, 225, 0.1) ;
     height: 4em;
+}
+.feed-pic{
+    width:5em;
+    height:5em;
+    background-color: rgba(90, 252, 225, 0.1);
+}
+.feed-pic+ div h5{
+    padding-left: 3em;
+    font-size: 200%;
 }
 .btn-small {
     height: 24px;

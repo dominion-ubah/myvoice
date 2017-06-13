@@ -4,7 +4,7 @@
     background: url(../login/logo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 25%;
+    background-position-y: 35%;
     height: 1em;
 }
 
@@ -21,11 +21,11 @@
      background-size: cover;
 }*/
 
-pri-color{
+.pri-color{
 background-color:rgba(255, 103, 0, 1);
 }
-pri-color{
-background-color:rgba(255, 103, 0, 1);
+.tpri-color{
+color:rgba(255, 103, 0, 1);
 }
 .acc-color{
 background-color:rgba(16, 75, 169, 1);
@@ -35,4 +35,9 @@ background-color:rgba(0, 162, 135, 1);
 }
 .dacc-color{
 background-color:rgba(255, 162, 0, 1);
+}
+.btn-small {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 0.5rem;
 }
