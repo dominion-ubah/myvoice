@@ -13,6 +13,23 @@ background-color:rgba(252, 252, 252, 1);
 .dacc-color{
 background-color:rgba(255, 162, 0, 1);
 }
+h5{
+    font-size:85%;
+    padding:0.5em;
+    margin: 0;
+    
+}
+h4{
+    margin: 0;
+    font-size: 145%;
+    font-weight: 200
+}
+.homebg{
+    background-image:url( talkbubbles.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+}
 .lower{
     padding-top: 2em;
 }
@@ -77,4 +94,26 @@ background-color:rgba(255, 162, 0, 1);
     height: 24px;
     line-height: 24px;
     padding: 0 0.5rem;
+}
+.sidenav{
+    margin: 0;
+}
+.sidenav li{
+    margin-bottom:0.1em;
+    padding: 0.2em 0;
+    
+}
+.sidenav li a{
+    background-color:none;
+    display: block;
+    padding: 0.4em 0; 
+    border:  1px solid transparent;
+    border-radius: 2px;
+    color:rgba(55, 55, 55, 1); 
+}
+.sidenav li a:hover{
+    background-color:rgba(55, 55, 55, 1);
+    display: block;
+     border:  1px solid rgba(90, 252, 225, 0.1);
+     color: white;
 }
