@@ -31,11 +31,10 @@ const MyVoiceRoutes:Routes = [
      
     
   
-  {path : 'main', component : MainComponent,
+  { path : 'main', component : MainComponent,
   children:[
-      {path : '',
+      { path : '',
          component : HomeComponent,
-         
          
         
     },
