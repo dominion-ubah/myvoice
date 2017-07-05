@@ -1,49 +1,69 @@
-.pri-color{
-background-color:rgba(255, 103, 0, 1);
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 90%;
+  }
 }
+
 .pri-color{
-background-color:rgba(255, 103, 0, 1);
+    background-color:rgba(255, 103, 0, 1);
 }
+
+.pri-color{
+    background-color:rgba(255, 103, 0, 1);
+}
+
 .acc-color{
-background-color:rgba(16, 75, 169, 1);
+    background-color:rgba(16, 75, 169, 1);
 }
+
 .dpri-color{
-background-color:rgba(252, 252, 252, 1);
+    background-color:rgba(252, 252, 252, 1);
 }
+
 .dacc-color{
-background-color:rgba(255, 162, 0, 1);
+    background-color:rgba(255, 162, 0, 1);
 }
+
 .lower{
     padding-top: 2em;
 }
+
 .card{
     font-size: 80%;
 }
+
 .card-content div{
     margin-top:-0.3em; 
 }
+
 .card-title{
     font-weight: bold;
 }
+
 .card-action{
-    margin-top: -2.5em;
-    
+    margin-top: -2.5em;    
 }
+
 .card-action{
     color: black;
 }
+
 .aside{
     font-size: 90%;
 }
+
 .people-links{
     margin:0;
 }
+
 .people-links div{
     margin-left:-1.2em; 
 }
+
 .people-links div:nth-child(2n) div{
     margin-left: -0.5em;
 }
+
 .main-tabs li a{
     font-size: 80%;
     text-align: left;
@@ -52,6 +72,7 @@ background-color:rgba(255, 162, 0, 1);
     padding-left: 0.5em;
     color: black;
 }
+
 .main-tabs i{
     margin: 0.5em 0.6em 0 0;
 }
@@ -59,3 +80,11 @@ background-color:rgba(255, 162, 0, 1);
     width: 1em;
     border: 1px solid cadetblue
 }*/
+
+
+.img-circle {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(242, 242, 242, 1);
+}
