@@ -21,4 +21,8 @@ modalActions = new EventEmitter<string|MaterializeAction>();
     this.modalActions.emit({action:"modal",params:['close']});
   }
 
+  submitCreate(f, user) {
+    console.log("Save button clicked");
+  }
+
 }
