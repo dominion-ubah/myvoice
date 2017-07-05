@@ -5,7 +5,7 @@
       <p>What ever wrong has been done here is you chance to make it right.. say something..</p>
     </div>
     <div class="col s12 m3 l4" style="margin-top: 0em; float: right">
-      <a (click)="openModal() " class=" modal-trigger waves-effect waves-light btn pri-color col l12 s12" style="padding: 0.5em 0.5em; height: 3em;">Voice a Complaint</a>
+      <a routerLink="complaint" class=" modal-trigger waves-effect waves-light btn pri-color col l12 s12" style="padding: 0.5em 0.5em; height: 3em;">Voice a Complaint</a>
     </div>
   </div>
 
@@ -221,57 +221,3 @@
 
 
 
-  <!-- Modal Structure -->
-<div id="modal1" class="modal modal-fixed-footer " style="height:45em; width: 70em;" materialize="modal" [materializeParams]="[{dismissible: false}]" [materializeActions]="modalActions">
-  <div class="modal-content modal1style" >
-      <!--  / modal-content -->
-     
-      <nav style="box-shadow: none; background-color: none ">
-     <div class="nav-wrapper" style="background-color:white; border-bottom: 1px solid rgba(255, 162, 0, 1)">
-     <h5 style="color: rgba(255, 103, 0, 1)">New Complaint</h5> 
-     <i class="close material-icons topright waves-effect waves-lightblue"  (click)="closeModal()"></i>  
-     </div>
-  </nav>
-  <div class="row dcontent">
-      <!-- form content -->
-      <div class="row">
-    <form materialize class="col s12" #f="ngForm" (ngSubmit)="submitCreate(f, users)" novalidate style="color: rgba(128, 127, 127, 1);">
-      <div class="row ">
-        <div class="col s1" ><i class="material-icons" style="font-size: 400%; color: rgba(244, 244, 244, 1) ">account_circle</i></div>
-        <div class="col s11">
-        <div class="row">
-        <div class="input-field col s12 smallformdivedit">
-          
-          <input id="icon_prefix" type="text" class="validate smallformedit" name="firstName" ngModel>
-          <label for="icon_prefix">Complaint title</label>
-        </div>
-          <div class="input-field col s12 smallformdivedit">
-          
-          <input id="icon_prefix" type="text" class="validate smallformedit" name="lastName" ngModel>
-          <label for="icon_prefix">Description</label>
-        </div>
-        <a class="btn btn-small pri-color ">Add Exhibit</a>
-        <a class="btn btn-small pri-color ">Add Tags</a>
-        
-      </div>
-      
-     
-    
-     
-
-        </div>
-      </div>
-    </form>
-  </div>
-      <!-- . form content -->
-     
-  </div>
-  <!--  / modal-content -->
-  </div>
-  <div class="modal-footer" style="border: none;">
-    <!--<a class="modal-action modal-close waves-effect waves-lightblue btn-flat left">Additional Info</a>-->
-    <a class="modal-action modal-close waves-effect waves-lightblue btn-flat" (click)="submitCreate(f, users)">Save</a>
-    <a class="waves-effect waves-lightblue btn-flat" (click)="closeModal()">Cancel</a>
-  </div>
-</div>
-  <!--   FGSBNERBJR VRENKBG HGJEGJERGB EGJKG GBNR GDRGB DBDBDNBNDB NJDRZB JKZSGVJDBKDNBJDNBJDGBJGNJDGNJDFGBJDFNBJDGNJG-->

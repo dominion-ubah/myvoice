@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { RantComponent } from './main/rant/rant.component';
 import { HomeComponent } from './main/home/home.component';
+import { ComplaintComponent } from './main/complaint/complaint.component';
 
 
 
@@ -28,7 +29,8 @@ import { HomeComponent } from './main/home/home.component';
     SingleMediaPlayerComponent,
     MainComponent,
     RantComponent,
-    HomeComponent
+    HomeComponent,
+    ComplaintComponent
     
   ],
   imports: [
